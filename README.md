@@ -50,6 +50,57 @@ Ensure the following software is installed on your system:
 
 5. Use Hoppscotch, HTTPie, Postman, or curl to interact with the API.
 
+### Usage
+
+The API exposes the following endpoints for managing to-do items:
+
+> [!IMPORTANT] 
+>
+> All endpoints are prefixed with: `http://localhost:<port_number>/v1`
+
+#### Create a To-Do
+
+- **POST** `/todos`
+
+- Request Body:
+
+  ```json
+  {
+    "title": "<string>",
+    "notes": null
+  }
+  ```
+
+#### List All To-Dos
+
+- **GET** `/todos`
+- Response: Array of to-do items
+
+#### Get a Single To-Do
+
+- **GET** `/todos/:id`
+- Replace `:id` with the actual to-do ID
+
+#### Update a To-Do
+
+- **PUT** `/todos/:id`
+
+- Replace `:id` with the actual to-do ID
+
+- Request Body:
+
+  ```json
+  {
+    "title": null,
+    "notes": null
+  }
+  ```
+
+#### Delete a To-Do
+
+- **DELETE** `/todos/:id`
+- Replace `:id` with the actual to-do ID
+
 ## License
 
 This repository is available under the terms of the [MIT license][1].
