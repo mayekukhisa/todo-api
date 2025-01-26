@@ -4,9 +4,10 @@ This is a simple To-Do List REST API built with Node.js, TypeScript, and Express
 
 ## Key Features
 
-> [!NOTE]
->
-> This API is in early development and has limited features.
+- Create new todos
+- Retrieve all todos
+- Update existing todos by ID
+- Delete todos by ID
 
 ## Getting Started
 
@@ -54,7 +55,7 @@ Ensure the following software is installed on your system:
 
 The API exposes the following endpoints for managing to-do items:
 
-> [!IMPORTANT] 
+> [!IMPORTANT]
 >
 > All endpoints are prefixed with: `http://localhost:<port_number>/v1`
 
